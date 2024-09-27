@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 11</title>
+</head>
+<body>
+
+    <script>
+
+        function jogarDados() {
+            var min = 2
+            var max = 12
+            return Math. floor(Math. random() * (max - min + 1)) + min
+        }
+
+        let dado = jogarDados()
+        alert("DADO: " + dado)
+
+        var ponto = 0
+
+        if (dado === 7 || dado === 11) {
+            alert("Você ganhou!")
+        } else if (dado === 2 || dado === 3 || dado === 12) {
+            alert("Você perdeu!")
+        } else {
+            ponto = dado
+
+            while(true) {
+                let dado = jogarDados()
+                alert("DADO: " + dado)
+
+                if (dado === 7) {
+                    alert("Você perdeu!")
+                    break
+                } else if (dado === ponto) {
+                    alert("Você ganhou!")
+                    break
+                }
+            }
+        }
+
+    </script>
+
+</body>
+</html>
