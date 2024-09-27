@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 10</title>
+</head>
+<body>
+
+    <script>
+
+        function reversoNumero(numero) {
+            return parseInt (numero.toString().split('').reverse().join(''))
+        }
+
+        let numero = prompt("Digite um número: ")
+
+        let resultado = reversoNumero(numero)
+
+        alert("O reverso de " + numero + " é: " + resultado)
+        
+    </script>
+ 
+</body>
+</html>

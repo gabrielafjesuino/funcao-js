@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 3</title>
+</head>
+<body>
+    
+    <script>
+
+        function retornarN3(n1, n2) {
+            let primeiroDigito = parseInt(n1 / 10)
+            let segundoDigito = n2 % 10
+            return String(primeiroDigito) + String(segundoDigito)
+        }
+
+        alert("O número 3 é: " + retornarN3(23, 89))
+        alert("O número 3 é: " + retornarN3(54, 32))
+        
+    </script>
+
+</body>
+</html>
